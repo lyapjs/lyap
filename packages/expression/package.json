@@ -1,0 +1,6 @@
+{
+    "name": "@lyapjs/expression",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Lyap expression"
+}
