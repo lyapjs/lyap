@@ -199,13 +199,44 @@ importers:
 
   packages/contracts: {}
 
-  packages/dom: {}
+  packages/dom:
+    dependencies:
+      '@lyapjs/contracts':
+        specifier: workspace:*
+        version: link:../contracts
+      '@lyapjs/expression':
+        specifier: workspace:*
+        version: link:../expression
+      '@lyapjs/reactive':
+        specifier: workspace:*
+        version: link:../reactive
 
-  packages/expression: {}
+  packages/expression:
+    dependencies:
+      '@lyapjs/contracts':
+        specifier: workspace:*
+        version: link:../contracts
 
-  packages/lyap: {}
+  packages/lyap:
+    dependencies:
+      '@lyapjs/contracts':
+        specifier: workspace:*
+        version: link:../contracts
+      '@lyapjs/dom':
+        specifier: workspace:*
+        version: link:../dom
+      '@lyapjs/expression':
+        specifier: workspace:*
+        version: link:../expression
+      '@lyapjs/reactive':
+        specifier: workspace:*
+        version: link:../reactive
 
-  packages/reactive: {}
+  packages/reactive:
+    dependencies:
+      '@lyapjs/contracts':
+        specifier: workspace:*
+        version: link:../contracts
 
 packages:
 
